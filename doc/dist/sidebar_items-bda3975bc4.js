@@ -1,0 +1,1 @@
+sidebarNodes={"extras":[{"id":"api-reference","title":"API Reference","group":"","headers":[{"id":"Modules","anchor":"modules"}]}],"exceptions":[],"modules":[{"id":"Fatura","title":"Fatura","group":"","nodeGroups":[{"key":"functions","name":"Functions","nodes":[{"id":"criar_fatura/1","anchor":"criar_fatura/1"},{"id":"ordena_fatura/1","anchor":"ordena_fatura/1"}]}]}],"tasks":[]}
