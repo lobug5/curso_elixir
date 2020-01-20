@@ -6,11 +6,15 @@ defmodule Fatura do
   @doc """
     Ao receber `fatura` retorna um array de faturas
       ## Exemplos
-      iex> Fatura.criar_fatura(["Telefone", "Agua", "Luz"])
-      ["Telefone", "Agua", "Luz"]
+      iex> Fatura.criar_faturas(["Telefone", "Agua"], [5,10])
+      ["Telefone", "Agua"]
   """
-  def criar_fatura(fatura) do
-    fatura
+  def criar_faturas(faturas, vencimentos) do
+    for vencimento <- vencimentos do
+      for fatura <- faturas do
+        "Fatura: #{fatura} vence no dia: #{vencimento}"
+      end
+    end
   end
   @doc """
     Ao receber `fatura` retorna um array de faturas ordenado
@@ -20,5 +24,15 @@ defmodule Fatura do
   """
   def ordena_fatura(faturas) do
     Enum.sort(faturas)
+  end
+
+  @doc """
+    Ao receber `faturas` e um elemento de `fatura` retorna se existe ou não
+      ## Exemplos
+      iex> Fatura.fatura_existe?(Fatura.criar_fatura(["Telefone", "Agua","Luz"]), "Luz")
+      true
+  """
+  def fatura_existe?(faturas, fatura) do
+    Enum.member?(faturas, fatura)
   end
 end

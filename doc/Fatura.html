@@ -7,7 +7,7 @@
     <meta name="generator" content="ExDoc v0.19.3">
     <title>Fatura — fatura v0.1.0</title>
     <link rel="stylesheet" href="dist/html-399e30b9b028e3059575.css" />
-    <script src="dist/sidebar_items-bda3975bc4.js"></script>
+    <script src="dist/sidebar_items-c97b3edb71.js"></script>
     <script async src="dist/html-399e30b9b028e3059575.js"></script>
   </head>
   <body data-type="modules">
@@ -82,14 +82,29 @@ Fatura      </h1>
   </div>
     <div class="summary-synopsis"><p>Ao receber <code class="inline">fatura</code> retorna um array de faturas</p>
 <pre><code class="nohighlight makeup elixir"><span class="c1">## Exemplos</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Fatura</span><span class="o">.</span><span class="n">criar_fatura</span><span class="p" data-group-id="7244315095-1">(</span><span class="p" data-group-id="7244315095-2">[</span><span class="s">&quot;Telefone&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Agua&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Luz&quot;</span><span class="p" data-group-id="7244315095-2">]</span><span class="p" data-group-id="7244315095-1">)</span><span class="w">
-</span><span class="p" data-group-id="7244315095-3">[</span><span class="s">&quot;Telefone&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Agua&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Luz&quot;</span><span class="p" data-group-id="7244315095-3">]</span></code></pre>
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Fatura</span><span class="o">.</span><span class="n">criar_fatura</span><span class="p" data-group-id="2384163636-1">(</span><span class="p" data-group-id="2384163636-2">[</span><span class="s">&quot;Telefone&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Agua&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Luz&quot;</span><span class="p" data-group-id="2384163636-2">]</span><span class="p" data-group-id="2384163636-1">)</span><span class="w">
+</span><span class="p" data-group-id="2384163636-3">[</span><span class="s">&quot;Telefone&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Agua&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Luz&quot;</span><span class="p" data-group-id="2384163636-3">]</span></code></pre>
+</div>
+</div>
+<div class="summary-row">
+  <div class="summary-signature">
+    <a href="#fatura_existe?/2">fatura_existe?(faturas, fatura)</a>
+  </div>
+    <div class="summary-synopsis"><p>Ao receber <code class="inline">faturas</code> e um elemento de <code class="inline">fatura</code> retorna se existe ou não</p>
+<pre><code class="nohighlight makeup elixir"><span class="c1">## Exemplos</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Fatura</span><span class="o">.</span><span class="n">fatura_existe?</span><span class="p" data-group-id="6609136976-1">(</span><span class="nc">Fatura</span><span class="o">.</span><span class="n">criar_fatura</span><span class="p" data-group-id="6609136976-2">(</span><span class="p" data-group-id="6609136976-3">[</span><span class="s">&quot;Telefone&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Agua&quot;</span><span class="p">,</span><span class="s">&quot;Luz&quot;</span><span class="p" data-group-id="6609136976-3">]</span><span class="p" data-group-id="6609136976-2">)</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Luz&quot;</span><span class="p" data-group-id="6609136976-1">)</span><span class="w">
+</span><span class="no">true</span></code></pre>
 </div>
 </div>
 <div class="summary-row">
   <div class="summary-signature">
     <a href="#ordena_fatura/1">ordena_fatura(faturas)</a>
   </div>
+    <div class="summary-synopsis"><p>Ao receber <code class="inline">fatura</code> retorna um array de faturas ordenado</p>
+<pre><code class="nohighlight makeup elixir"><span class="c1">## Exemplos</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Fatura</span><span class="o">.</span><span class="n">ordena_fatura</span><span class="p" data-group-id="9403621479-1">(</span><span class="nc">Fatura</span><span class="o">.</span><span class="n">criar_fatura</span><span class="p" data-group-id="9403621479-2">(</span><span class="p" data-group-id="9403621479-3">[</span><span class="s">&quot;Telefone&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Agua&quot;</span><span class="p">,</span><span class="s">&quot;Luz&quot;</span><span class="p" data-group-id="9403621479-3">]</span><span class="p" data-group-id="9403621479-2">)</span><span class="p" data-group-id="9403621479-1">)</span><span class="w">
+</span><span class="p" data-group-id="9403621479-4">[</span><span class="s">&quot;Agua&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Luz&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Telefone&quot;</span><span class="p" data-group-id="9403621479-4">]</span></code></pre>
+</div>
 </div>
   </div>
         </section>
@@ -113,8 +128,23 @@ Functions          </h1>
   <section class="docstring">
 <p>  Ao receber <code class="inline">fatura</code> retorna um array de faturas</p>
 <pre><code class="nohighlight makeup elixir"><span class="c1">## Exemplos</span><span class="w">
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">Fatura</span><span class="o">.</span><span class="n">criar_fatura</span><span class="p" data-group-id="9390140058-1">(</span><span class="p" data-group-id="9390140058-2">[</span><span class="s">&quot;Telefone&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Agua&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Luz&quot;</span><span class="p" data-group-id="9390140058-2">]</span><span class="p" data-group-id="9390140058-1">)</span><span class="w">
-</span><span class="p" data-group-id="9390140058-3">[</span><span class="s">&quot;Telefone&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Agua&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Luz&quot;</span><span class="p" data-group-id="9390140058-3">]</span></code></pre>
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Fatura</span><span class="o">.</span><span class="n">criar_fatura</span><span class="p" data-group-id="8774693575-1">(</span><span class="p" data-group-id="8774693575-2">[</span><span class="s">&quot;Telefone&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Agua&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Luz&quot;</span><span class="p" data-group-id="8774693575-2">]</span><span class="p" data-group-id="8774693575-1">)</span><span class="w">
+</span><span class="p" data-group-id="8774693575-3">[</span><span class="s">&quot;Telefone&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Agua&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Luz&quot;</span><span class="p" data-group-id="8774693575-3">]</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="fatura_existe?/2">
+  <div class="detail-header">
+    <a href="#fatura_existe?/2" class="detail-link" title="Link to this function">
+      <span class="icon-link" aria-hidden="true"></span>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature">fatura_existe?(faturas, fatura)</span>
+  </div>
+  <section class="docstring">
+<p>  Ao receber <code class="inline">faturas</code> e um elemento de <code class="inline">fatura</code> retorna se existe ou não</p>
+<pre><code class="nohighlight makeup elixir"><span class="c1">## Exemplos</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Fatura</span><span class="o">.</span><span class="n">fatura_existe?</span><span class="p" data-group-id="5338954208-1">(</span><span class="nc">Fatura</span><span class="o">.</span><span class="n">criar_fatura</span><span class="p" data-group-id="5338954208-2">(</span><span class="p" data-group-id="5338954208-3">[</span><span class="s">&quot;Telefone&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Agua&quot;</span><span class="p">,</span><span class="s">&quot;Luz&quot;</span><span class="p" data-group-id="5338954208-3">]</span><span class="p" data-group-id="5338954208-2">)</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Luz&quot;</span><span class="p" data-group-id="5338954208-1">)</span><span class="w">
+</span><span class="no">true</span></code></pre>
   </section>
 </section>
 <section class="detail" id="ordena_fatura/1">
@@ -126,6 +156,10 @@ Functions          </h1>
     <h1 class="signature">ordena_fatura(faturas)</span>
   </div>
   <section class="docstring">
+<p>  Ao receber <code class="inline">fatura</code> retorna um array de faturas ordenado</p>
+<pre><code class="nohighlight makeup elixir"><span class="c1">## Exemplos</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">Fatura</span><span class="o">.</span><span class="n">ordena_fatura</span><span class="p" data-group-id="1796890877-1">(</span><span class="nc">Fatura</span><span class="o">.</span><span class="n">criar_fatura</span><span class="p" data-group-id="1796890877-2">(</span><span class="p" data-group-id="1796890877-3">[</span><span class="s">&quot;Telefone&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Agua&quot;</span><span class="p">,</span><span class="s">&quot;Luz&quot;</span><span class="p" data-group-id="1796890877-3">]</span><span class="p" data-group-id="1796890877-2">)</span><span class="p" data-group-id="1796890877-1">)</span><span class="w">
+</span><span class="p" data-group-id="1796890877-4">[</span><span class="s">&quot;Agua&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Luz&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Telefone&quot;</span><span class="p" data-group-id="1796890877-4">]</span></code></pre>
   </section>
 </section>
           </div>
